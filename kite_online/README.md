@@ -1,4 +1,4 @@
-#Is Kite online?
+# Ist Kite online?
 
 Dies Programme ist zum schauen ob linux.kite.com erreichbar ist.
 Aktuell (14.09.2021) ist die Page offline und darum lässt sich 

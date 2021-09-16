@@ -1,0 +1,1 @@
+print((float(input("Kapital: ")) * float(input("Zinz: ")) / 100))

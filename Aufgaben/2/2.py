@@ -1,0 +1,1 @@
+print(float(input("Bitte den Nettobetrag eingeben: ")) * 1.19)

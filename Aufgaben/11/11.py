@@ -1,4 +1,3 @@
-
 def input_value(foo, bar):
     x = input(f"Bitte gib dein {foo} in {bar} ein. :")
     return (x, foo, bar)
@@ -100,4 +99,4 @@ alter = eingabe("Alter", "Jahren")
 geschlecht = eingabe_geschl("Geschlecht", "( M, oder W )")
 bmi = bmi_result(geschlecht, gewicht, groesse, alter)
 bmi = round(bmi, 2)
-print(f"Dein BMI beträgt {bmi} und damit bist du {catigor(bmi)}")
+print(f"Dein BMI beträgt {bmi} und damit hast du {catigor(bmi)}")

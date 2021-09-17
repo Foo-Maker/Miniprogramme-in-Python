@@ -6,5 +6,5 @@ kite nich installieren.
 
 Wenn kein 404 oder 502er Fehler kommt, dann startet die Installation.
 
-So lange noch der die Fehler erschienen kann das Programm mie der 
+So lange noch der die Fehler erschienen kann das Programm mit der 
 Eingabetaste abgebrochen werden.

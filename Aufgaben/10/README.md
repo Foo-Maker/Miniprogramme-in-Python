@@ -1,0 +1,1 @@
+Da ich von der Formel keine Ahnung hat, habe ich keinen Plan ob ich die Aufgabe korrekt gelöst habe.

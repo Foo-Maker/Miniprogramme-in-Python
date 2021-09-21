@@ -5,6 +5,7 @@ import os
 from threading import Thread 
 import time 
 
+os.system("clear")
 print("Starte Programm…")
 print(f"")
 print(f"Mit der Eingabetaste kann das Programm abgebrochen werden!")
@@ -13,6 +14,7 @@ print()
 i = False
 install = False
 uhrzeit = ""
+history = 0
 
 def listen():
     global i
@@ -21,6 +23,15 @@ def listen():
 
 listener = Thread(target=listen)
 listener.start()
+
+def status_toggle(bar):
+    if bar[1] != history:
+        print(f"{bar[0]} Wir haben einen {bar[1]} Fehler")
+        return bar
+    else:
+        pass
+
+
 
 def chek():
     named_tuple = time.localtime() # get struct_time
@@ -33,15 +44,19 @@ def chek():
         print(type(r))
         i = False
         install = True
+        return 200
     else:
-        print(f"{uhrzeit} Wir haben einen {r.status_code} Fehler")
+        sc = r.status_code
         time.sleep(2)
+        listener.join()
+        return uhrzeit, sc
+    listener.join()
 
-chek()
-
-while True:
+while True: 
     try:
-        chek()
+        foo = chek()
+        status_toggle(foo)
+        history = foo[1]
     except:
         time.sleep(10)
 

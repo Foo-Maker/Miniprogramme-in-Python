@@ -6,12 +6,12 @@ def input_value(bar):
     return foo
 
 def error_msg(foo):
-    print(f"\n Die Eingabe von {foo} ist ungültig. \n Bitte gieb eine gültige Zahl ein.\n")
+    print(f"\n Die Eingabe von {foo} ist ungültig. \n Bitte gieb eine gültige Zahl (größer, gleich 2) sein.\n")
 
 def check_num(foo, bar):
     try:
         foo = float(foo)
-        if foo > 0:
+        if foo >= 2:
             return foo
         else:
             error_msg(foo)

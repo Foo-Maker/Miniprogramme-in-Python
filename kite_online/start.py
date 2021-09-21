@@ -48,7 +48,6 @@ def chek():
     else:
         sc = r.status_code
         time.sleep(2)
-        listener.join()
         return uhrzeit, sc
     listener.join()
 
